@@ -1,0 +1,54 @@
+位置：actionbar
+类型：完成栏
+显示
+§znox:complete 
+新纪录
+§znox:new_record
+类型
+§znox:type_ar 王牌竞速
+§znox:type_gr 网格跑者
+§znox:type_md 熔毁
+§znox:type_sot 时之沙
+奖牌（王牌竞速）
+§znox:ar_trophy_1 下界合金
+§znox:ar_trophy_2 钻石
+§znox:ar_trophy_3 黄金
+§znox:ar_trophy_4 铁
+§znox:ar_trophy_5 铜
+幸存的房间（熔毁）
+§znox:md_rooms_1
+§znox:md_rooms_2
+§znox:md_rooms_3
+§znox:md_rooms_4
+§znox:md_rooms_5
+§znox:md_rooms_6
+§znox:md_rooms_7
+时之沙
+§znox:sot_escaped 成功逃脱
+§znox:sot_failed 没有成功逃脱
+
+数据（最多15位，'§zd%d'占了4位）
+'§z'+'d%d'(%d为第几个数据)
+ps:不足位数请用 ~ 补全
+
+§znox:mojang_entry_jens 召唤神秘角色
+§znox:mojang_entry_agnes 召唤神秘角色
+§znox:mojang_exit_jens 赶走神秘角色
+§znox:mojang_exit_agnes 赶走神秘角色
+
+位置：title
+顶栏
+nox:barlby;1________________________________________________;2谜题;金币数"
+nox:barace;1________________________________________________;2谜题;金币数"
+nox:barmlt;1________________________________________________;2谜题;金币数"
+nox:barsot;1________________________________________________;2谜题;金币数"
+nox:bargrd;1________________________________________________;2谜题;金币数"
+1后面填数据（最多48位）
+2后面填已解开的谜题数量（最多2位）
+金币数就是金币数量，无位数限制
+ps:不足位数请用 _ 补全
+
+补充:
+经过测试，使用tellraw向玩家发送包含“§v§z”的消息会显示在准心上(当然不同设备可能不同)
+ui文件中，titleraw显示title包含"§v§z"或"§n§o§x"会显示为类似actionbar的样式，但是测试发现只包含"§n§o§x"会保存黑色大标题文本所示，但只包含"§v§z"或同时包含"§v§z"和"§n§o§x"可以正常显示
+显示actionbar时，如果以数字开头或空格开头，就会弹出所有actionbar可以弹出的控件(只显示空白也会)，但是不已数字开头或空格开头，就是正常actionbar               
